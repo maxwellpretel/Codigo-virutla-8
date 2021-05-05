@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas en HTML</h1>
+    </header>
+    <main>
+<!-- se añade border  -->
+        <table border="1">
+            <thead>
+                <!-- en thead es th  -->
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <!-- en tbody es td  -->
+                <tr>
+                    <td>Maxwell</td>
+                    <td>Pretel</td>
+                </tr>
+                <tr>
+                    <td>Karina</td>
+                    <td>Damian</td>
+                </tr>
+                <tr>
+                    <td>Ethan</td>
+                    <td>Pretel</td>
+                </tr>
+            </tbody>
+
+            <!-- para poner una línea o salto de línea  -->
+        </table>
+        <hr/>
+        <table border="1">
+            <thead>
+                <!-- colspan es para añadir 2 columnas en una  -->
+                <th colspan="2">Notas</th>
+                <th>Promedio</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>05</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>13</td>
+                    <td>16</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <hr />
+        <table border="1">
+            <tbody>
+                <!-- tr fila / td columna -->
+                <tr>
+                    <td colspan="2">A</td>
+                    <td colspan="2">B</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+             
+            </tbody>
+
+        </table>
+        <hr>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <!-- rowspam para combinar filas  -->
+                    <td rowspan="2"></td>
+                    <td colspan="2">Average</td>
+                    <td rowspan="2">Red eyes</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>weight</td>
+                </tr>
+                <tr>
+                    <td>Varones</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Mujeres</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>16</td>
+
+            </tbody>
+
+        </table>
+        <hr/>
+        <table border="1">
+            <tbody>
+
+                <tr>
+                    <td rowspan="2" colspan="2">row 1</td>
+                    <td colspan="3">hola</td>
+                </tr>
+                <tr>
+                    <td>row2</td>
+                    <td>row2</td>
+                    <td>row2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                </tr>
+                <tr>
+                    <td>row4</td>
+                    <td>row4</td>
+                    <td>row4</td>
+                    <td>row4</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+    </main>
+</body>
+
+</html>
