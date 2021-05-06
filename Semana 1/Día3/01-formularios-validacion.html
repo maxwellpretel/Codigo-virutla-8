@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form>div {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios en HTML - Validación</h1>
+    </header>
+    <main>
+        <!-- form: Formularios / action es el destino del formulario  -->
+        <form>
+            <div>
+                <!-- label: mostrar un pedazo de texto  -->
+                <label for="nombre">Nombre: </label>
+                <!-- input para cerrar la etiqueta  -->
+                <!-- required: requiere llenar Información  -->
+                <input type="text" id="nombre" placeholder="Ejm: Diana" required />
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <!-- id se vincula con el for de label  -->
+                <!-- placeholder: atributo que da sello de agua  -->
+                <input type="text" id="apellido" placeholder="Ejm: Ramirez" required minlength="2" />
+            </div>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="Ejm: 18" min="17" max="50" />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ejm: max@codigo.com">
+            </div>
+            <div>
+                <label for="contra">Password</label>
+                <!-- pattern: patrones que siguien un password  -->
+                <input type="password" id="contra" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required
+                title="Echt! minimo 8 caracteres, una maypuscla, una minúscula y un número">
+            </div>
+            <div>
+                <label for="fecha">Fecha de Matricula</label>
+                <input type="date" id="fecha">
+            </div>
+            <div>
+                <!-- selec para elegir diferentes opciones  -->
+                <label for="bootcamp">Seleccione Bootcamp</label>
+                <select name="" id="bootcamp">
+                    <option value="web">Desarrollo Web</option>
+                    <option value="mkt">Marketing Digital</option>
+                    <option value="apps" selected>Desarrollo de Aplicaciones Móviles</option>
+                </select>
+            </div>
+            <div>
+                <!-- texarea: escribir un mensaje al servidor -->
+                <label for="mensaje">Mensaje al Profesor</label>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <!-- name="turno" para discriminar las opciones  -->
+                <label for="">Escoja Turno</label>
+                <br />
+                <label for="dia">Día</label>
+                <input type="radio" id="dia" name="turno">
+                <br />
+                <label for="noche">Noche</label>
+                <input type="radio" id="noche" name="turno">
+            </div>
+            <fieldset>
+                <!-- Br porque solo se usa como título  -->
+                <!-- checkbox para seleccionar los puntos  -->
+                <legend for="">Seleccione equipos a utilizar</legend>
+                <br />
+                <label for="audios">Audífonos</label>
+                <!-- checked para marcar el punto  -->
+                <input type="checkbox" id="audios" checked>
+                <br />
+                <label for="laptop">Laptop</label>
+                <input type="checkbox" id="laptop">
+                <br />
+                <label for="mouse">Mouse</label>
+                <input type="checkbox" id="mouse">
+            </fieldset>
+            <div>
+                <label for="color">Seleccione Color</label>
+                <input type="color" id="color">
+            </div>
+            <div>
+                <!-- submit es enviar el formulario al servidor -->
+                <button type="submit">Guardar Información</button>
+                <button type="button">Consultar DNI</button>
+                <button type="reset">Limpiar Formulario</button>
+
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
