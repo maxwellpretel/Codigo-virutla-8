@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,20 @@
     <link rel="stylesheet" href="./04-css-pseudoclases.css">
     <title>Document</title>
 </head>
+
 <body>
 
+    <!-- nav>ul>li*3>a.nav-link{Link $} -->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">Link 1</a></li>
+            <li><a href="#" class="nav-link active">Link 2</a></li>
+            <li><a href="#" class="nav-link">Link 3</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Cabecera - 1</th>
@@ -20,6 +31,7 @@
                 </tr>
             </thead>
             <tbody>
+
                 <tr>
                     <td>Contenido - 1</td>
                     <td>Contenido - 2</td>
@@ -47,7 +59,60 @@
             </tbody>
         </table>
 
+        <hr />
+
+        <!-- section*2>h2{Titulo $}+p*3{lorem} -->
+        <section>
+            <h2>Titulo 1</h2>
+            <p>lorem</p>
+            <p>lorem</p>
+            <h4>asd</h4>
+            <p>lorem</p>
+        </section>
+        <section>
+            <h2>Titulo 2</h2>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </section>
+
+        <!-- section*2>h3*+p*3{parrafo $} -->
+        <section>
+            <h3>Titulo H3</h3>
+            <p>parrafo 1</p>
+            <p>parrafo 2</p>
+            <p>parrafo 3</p>
+        </section>
+        <section>
+            <h3>Titulo H3</h3>
+            <p>parrafo 1</p>
+            <p>parrafo 2</p>
+            <p>parrafo 3</p>
+        </section>
+
+        <!-- article*3>p{lorem} -->
+        <article>
+            <h4>Titulo del article</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem dolorem nihil facere aspernatur sed
+                doloribus adipisci! Perspiciatis dolorum vel, libero qui modi veniam commodi provident eum est
+                voluptatem voluptatum.</p>
+        </article>
+        <article>
+            <h4>Titulo del article</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum minima provident odit unde, neque
+                possimus quia pariatur doloremque harum non fuga eius sint excepturi, iste culpa aspernatur, labore
+                necessitatibus maxime!</p>
+        </article>
+        <article class="agotado">
+            <h4>Titulo del article</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora impedit amet magni dolore expedita, ut
+                perferendis necessitatibus dolorum officiis suscipit quasi culpa explicabo velit quod nemo ad tempore
+                nulla eius?</p>
+        </article>
+
+
     </main>
-    
+
 </body>
+
 </html>

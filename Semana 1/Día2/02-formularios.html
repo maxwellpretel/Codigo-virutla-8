@@ -67,19 +67,31 @@
                 <label for="noche">Noche</label>
                 <input type="radio" id="noche" name="turno">
             </div>
-            <div>
+            <fieldset>
                 <!-- Br porque solo se usa como título  -->
                 <!-- checkbox para seleccionar los puntos  -->
-                <label for="">Seleccione equipos a utilizar</label>
+                <legend for="">Seleccione equipos a utilizar</legend>
                 <br />
                 <label for="audios">Audífonos</label>
-                <input type="checkbox" id="audios">
+                <!-- checked para marcar el punto  -->
+                <input type="checkbox" id="audios" checked>
                 <br />
                 <label for="laptop">Laptop</label>
                 <input type="checkbox" id="laptop">
                 <br />
                 <label for="mouse">Mouse</label>
                 <input type="checkbox" id="mouse">
+            </fieldset>
+            <div>
+                <label for="color">Seleccione Color</label>
+                <input type="color" id="color">
+            </div>
+            <div>
+                <!-- submit es enviar el formulario al servidor -->
+                <button type="submit">Guardar Información</button>
+                <button type="button">Consultar DNI</button>    
+                <button type="reset">Limpiar Formulario</button>    
+
             </div>
         </form>
     </main>

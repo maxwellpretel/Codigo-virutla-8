@@ -1,3 +1,9 @@
+
+*{
+    margin: 0;
+
+}
+
 /* 
 
 De cada grupo de elementos, el que ocupe la 3ra posición, será afectado
@@ -10,6 +16,12 @@ tr:nth-child(3){
 }
 
 /* odd impart */
+
+thead tr:nth-child(odd){
+    background-color:darkslategrey;
+
+}
+
 tbody tr:nth-child(odd){
     background-color: #ccc;
 
@@ -20,3 +32,73 @@ tbody tr:nth-child(even){
     background-color: #aaa;
 
 }
+
+/* pintar la columna  */
+th:nth-child(3) , td:nth-child(3){
+    background-color:darkkhaki;
+}
+
+tbody tr:last-child td:last-child{
+    
+    border-bottom-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child{
+    
+    border-bottom-left-radius: 10px;
+}
+
+/* como quitar el margen entre celdas a una tabla  */
+
+table {
+    border-collapse: collapse;
+}
+
+thead tr:first-child th:first-child{
+    
+    border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child{
+    
+    border-top-right-radius: 10px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 10px;
+    color: #444;
+}
+
+/* todos los elementos que tengan la clase nav link  y que tengan la clases active  */
+.nav-link.active{
+    font-style: italic;
+}
+
+/* ~ todos los elementos "p" que sean hermanos con un "h2" */
+
+h2~p{
+    color: orange;
+}
+
+/* simbolo + afecta al primer hermano de h3 */
+h3+p{
+    color: aquamarine;
+}
+
+/* todos los elementos "article" excepto aquellos que tengan la clase "agotado" */
+article:not(.agotado){
+    width: 300px;
+    box-shadow: 0px 0px 8px #888;
+}
+
+/* todos los hijos de "article" excepto los "h4" */
+article :not(h4){
+    font-style: italic;
+}
+

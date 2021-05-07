@@ -16,6 +16,7 @@
 
 <body>
   <!-- para tener textos -->
+  <!-- para colocar un  banner  institucional  -->
   <header>
     <h1>
       Educación OnLine
@@ -26,7 +27,7 @@
     <!-- href es una propiedad que indica la pagina enlazada mediante el link -->
     <a href="mi-perfil.html">Mi perfil</a>
     <!-- target="_black" el navegador abriará en una pesta{a nueva} -->
-    <a href="https://www.google.com.pe"target="_black">Buscador</a>
+    <a href="https://www.google.com.pe" target="_black">Buscador</a>
     <a href="#sugerencias">sugerencias</a>
     <a href="">Promociones</a>
   </NAV>
@@ -37,22 +38,57 @@
       <!-- Noticias de información relevante -->
       <article>
         <h3>curso de ingles</h3>
+        <!-- descargar imagenes externas  -->
+        <img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-html5-circle-512.png"
+          alt="">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Laboriosam, illo voluptates! Qui enim
           officiis tempora dicta voluptatum excepturi provident est inventore rem exercitationem! Porro maxime aliquam
           cum nulla. aprenderemos <span> funciones de flecha!</span>
-        <pre>
-            <code>
-            const sumar = (a,b) =>{
-              return a+b;
-            }
-          </code>
-          </pre>
         </p>
+        <h4>Temas a tocar</h4>
+          <ul>
+            <li>Intoducción</li>
+            <li>tablas</li>
+            <li>formulario</li>
+          </ul>
       </article>
       <!-- alt+shift+abajo hace una copia abajo  -->
       <article>
         <h3>curso de ingles</h3>
+        <!-- descargar archivo local con ./imagen/...  -->
+        <!-- img es inline  -->
+        <figure>
+          <!-- width da la medida/tamaño de la imagen  -->
+          <img src="./imagenes/unknown.png" width="50" alt="imagen de edificio">
+        </figure>
+        <figure>
+          <img src="./imagenes/unknown.png" alt="imagen de edificio">
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Laboriosam, illo voluptates! Qui enim
+          officiis tempora dicta voluptatum excepturi provident est inventore rem exercitationem! Porro maxime aliquam
+          cum nulla. aprenderemos <span> funciones de flecha!</span>
+         <pre>
+            <code>
+            const sumar = (a,b) =>{
+              return a+b;
+            }
+            </code>
+          </pre>
+        </p>
+        <h4>Modulos</h4>
+        <!-- type da tipo de contar  -->
+        <ol type="I">
+          <li>Módulo Basico</li>
+          <li>Módulo Intermedio</li>
+          <li>Módulo Avanzado</li>
+        </ol>
+      </article>
+      <article>
+        <h3>curso de ingles</h3>
+        <!-- para salir de la carpeta se pone ../ y el mismo procedimiento ára salir de otra carpeta  -->
+        <img src="./../ImagenesGlobal/unknown.png" alt="">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Laboriosam, illo voluptates! Qui enim
           officiis tempora dicta voluptatum excepturi provident est inventore rem exercitationem! Porro maxime aliquam
@@ -99,24 +135,10 @@
       <article>
         <h3>curso de ingles</h3>
         <p>
+          <!-- strong es negrita  -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Laboriosam, illo voluptates! Qui enim
           officiis tempora dicta voluptatum excepturi provident est inventore rem exercitationem! Porro maxime aliquam
-          cum nulla. aprenderemos <span> funciones de flecha!</span>
-        <pre>
-            <code>
-            const sumar = (a,b) =>{
-              return a+b;
-            }
-          </code>
-          </pre>
-        </p>
-      </article>
-      <article>
-        <h3>curso de ingles</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Laboriosam, illo voluptates! Qui enim
-          officiis tempora dicta voluptatum excepturi provident est inventore rem exercitationem! Porro maxime aliquam
-          cum nulla. aprenderemos <span> funciones de flecha!</span>
+          cum nulla. <strong>aprenderemos</strong> <span> funciones de flecha!</span>
         <pre>
             <code>
             const sumar = (a,b) =>{
@@ -130,7 +152,7 @@
         <h3>curso de desarrollo</h3>
         <p>
           <!-- br hace un espacio para abajo -->
-          Lorem ipsum <br> dolor sit amet consectetur adipisicing elit. Vel pariatur laudantium nemo suscipit fugiat
+          Lorem ipsum <br /> dolor sit amet consectetur adipisicing elit. Vel pariatur laudantium nemo suscipit fugiat
           incidunt temporibus vero nam, alias consequuntur, ut quos dolore sed maxime quia, quidem voluptatibus quisquam
           sunt?
         </p>
