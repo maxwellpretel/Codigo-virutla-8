@@ -1,0 +1,42 @@
+body{
+    background-color: #333;
+    color: #eee;
+}
+
+h1{
+    /* tipo de letra  */
+    font-family: Arial, Helvetica, sans-serif;
+    /* 16px medida estandar / 1em=16px / 1rem=16px el tamaño de una letra en el elemento html(Root)  */
+    font-size: 1em;
+    /* Grosor de la letra */
+    font-weight: 600; 
+    text-align: center;
+    letter-spacing: 16px;
+    word-spacing: 20px;
+
+}
+
+.parrafo1 {
+    text-align: center;
+    line-height: 35px;
+}
+
+.btn1 {
+    text-align: center;
+}
+
+.articulo1{
+    text-align: center;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+
+
