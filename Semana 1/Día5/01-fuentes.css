@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'MiPrimeraFuente';
+    src: url('../FuentesGlobales/RobotoSlab-Bold.ttf');
+}  
+
+@font-face {
+    font-family:'MiFuenteMedium' ;
+    src: url('../FuentesGlobales/RobotoSlab-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'miFuenteLowe';
+    src: url('../FuentesGlobales/RobotoSlab-Medium.ttf');
+}
+
+h1, h2{
+    font-family: 'MiPrimeraFuente';
+    color: #3361FF;
+}
+
+.descripcion{
+    font-family: "MiPrimeraFuente";
+    font-size: 12px;
+    width: 200px;
+    height: 90px;
+    overflow: scroll;
+}
+
+.segundo__tìtulo{
+    font-family: "MiFuenteMedium";
+}
+
+.fuente_link ::first-letter{
+    font-size: 72px;
+}
+
+.fuente_link{
+    font-family: 'Pangolin', cursive;
+}
+
+a{  
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-family: "MiPrimeraFuente";
+}
+
+a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #c00;
+}
+
+/* height 100 vh hace que ocupe el 100% de la pantalla */
+.alto__total{
+    height: 100vh;
+}
+
+.portada__codigo{
+    background-image: url(../ImagenesGlobal/Imangen2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+   }
+
+.tercer__titulo{
+    font: 42px "MiPrimeraFuente";
+}
+
+.tercer__parrafo{
+    font: 16px "MiPrimeraFuente";
+    border: 1px solid #c00;
+    background: -webkit-linear-gradient(right, #1A98EF, #EF1AED, #FFFD28);
+
+}
+
+.btn_iniciar_session{
+    margin-top: 30px;
+    font-family: "miFuenteLowe";
+    background: -webkit-linear-gradient(right, #1A98EF, #EF1AED, #FFFD28);
+    border: none;
+    color: #fff;
+}
+
+.cuarto__parrafo{
+    margin-top: 30px;
+    font-family: "MiPrimeraFuente";
+    font-size: 16px;
+    border: 1px solid purple;
+    background: -webkit-radial-gradient(center, circle, #ff732B, );
+}
+
+/* filter puede ser
+blur
+grayscale
+saturate
+opacity
+sepia
+brigthness
+hue-rotate
+ */
+.primera_imagen{
+    /* parametro de 1 a 10px */
+    filter: blur(10px);
+
+}
+
+.segunda_imagen{
+    /* parametro del 0.1 a 1 */
+    filter: grayscale(1);
+}
+
+/* de 01 a 1 */
+.tercer_imagen{
+    filter: sepia(1);
+}
+
+/* de 0.1 a 10 */
+.cuata_imagen{
+    filter: brightness(10);
+}
+
+.quinto_imagen{
+    filter: invert(1);
+}
+
+.sexto_imagen{
+    filter: saturate(10);
+}
+
+.septima_imagen{
+    filter: contrast(0.5);
+}
