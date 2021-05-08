@@ -103,3 +103,39 @@ article :not(h4){
     font-style: italic;
 }
 
+.youtube{  
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    
+}
+
+.facebok{  
+    background-color: rgb(16, 13, 231);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    
+}
+
+.twitter{  
+    background-color: #209cee;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    
+}
+
+.facebook{
+
+    background: -webkit-linear-gradient(right, #1A98EF, #EF1AED, #FFFD28);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    
+}

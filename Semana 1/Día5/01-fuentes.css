@@ -62,6 +62,7 @@ a:hover{
     height: 100vh;
 }
 
+/* imagenes de fondo */
 .portada__codigo{
     background-image: url(../ImagenesGlobal/Imangen2.jpg);
     background-position: center;

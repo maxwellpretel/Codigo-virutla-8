@@ -1,0 +1,105 @@
+/* configuraciones generales */
+:root {
+  --color-primario: #f13423;
+  --color-secundario: rgb(20, 233, 13);
+  /* rbrA el A hace que sea transparente desde el 0 al 1 */
+  --color-rojo-transparente: rgba(200, 55, 63, 0.5);
+}
+
+/* SCCGRAL - RELLENO AUTOMATICO */
+* {
+  margin: 0;
+  padding: 0;
+  /* alturas y anchos definidos por box-sizing */
+  box-sizing: border-box;
+}
+
+/* borde-color, color, background color */
+h1 {
+  color: var(--color-primario);
+  background-color: #ddd;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+.form-control {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  padding: 8px 8px 8px 30px;
+  border: 1px dashed #f17469;
+  border-bottom: 3px solid var(--color-primario);
+  border-radius: 5px;
+  background-image: url(../ImagenesGlobal/Icono-Id.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 24px 24px;
+  
+}
+.form-control:focus {
+  background-image: url(../ImagenesGlobal/inco-id.hover.png);
+}
+
+.cuadrado {
+  height: 200px;
+  width: 200px;
+  background-color: var(--color-secundario);
+  border-radius: 50%;
+}
+
+/* TAMAÑOS */
+.seccion1 {
+  background-color: var(--color-primario);
+  height: 60px;
+  /* 50% del ancho del padre */
+  width: 50%;
+}
+
+.articulo1 {
+  background-color: var(--color-secundario);
+  height: 30px;
+  width: 50%;
+}
+
+.parrafo1 {
+  width: 200px;
+  height: 100px;
+  background-color: #ddd;
+  /* OVERFLOW  servi para controlar el desbordamiento
+     del contenido del elemento */
+  overflow: auto;
+}
+
+/* personalizando el Scrollbar */
+
+.parrafo1::-webkit-scrollbar {
+  /* ancho del scroll vertical */
+  width: 10px;
+}
+
+.parrafo1::-webkit-scrollbar-thumb {
+  /* la barra de desplazamiento */
+  border-radius: 5px;
+  background-color: rgb(225, 250, 1);
+}
+.parrafo1::-webkit-scrollbar-track {
+  /* la pista por donde se desplaza  */
+  background-color: #aa4433;
+}
+/* los elementos INLINE no pueden tener ancho ni alto definido */
+
+.badge-rojo {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-primario);
+}
+
+.imagen{
+    margin-left: 10px;
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
