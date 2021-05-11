@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #444;
+}
+
+header {
+  height: 60px;
+  box-shadow: 0px 0px 8px #bbb;
+}
+
+.color-primario {
+  color: magenta;
+}
+
+/* display: none sirve para quitar el elemento y su espacio es ocupado por otros elementos */
+/* opacity:0 le da un color trasparente, se puede seleccionar y dar click */
+/* visibility:hidden convierte a un elemento inivisible pero no se puede dar click mas amantiene su espacio */
+
+.navegacion {
+  /* display: se puede convertit en un elemento bloqueante o in line;
+    display: block
+            inline
+            inline block */
+  display: none;
+}
+
+/* calc() serve para realos operaciones con diferentes unidades de meiday poder hacer calculos */
+aside {
+  height: calc(100vh - 60px);
+  background-color: #a11477;
+  width: 240px;
+}
+
+section, aside{
+    display: inline-block;
+
+}
+
+section{
+    background-color: rgb(20, 20, 110);
+    width: calc(100% - 240px);
+    height: calc(100vh - 60px);
+}
