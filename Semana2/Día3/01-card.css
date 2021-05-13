@@ -3,3 +3,112 @@ margin:0;
 box-sizing:border-box;
 padding:0;
 }
+
+
+
+
+body{
+    min-height: 100vh;
+    background-color: #ddd;
+    font-family: "Roboto", sans-serif;
+}
+
+.card__inc{
+    height: 600x;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #aaa;
+    margin: 100px auto 0 auto;
+    z-index: 100;
+}
+
+.card__img{
+    
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    background-color: rgb(70, 67, 67);
+
+}
+
+.card__inc .card__img i{
+    position: absolute;
+    transition: all 0.3s ease;
+    margin: 50px  0 0 calc(225px - 60px);
+    
+}
+
+.color-z{
+    color: rgb(95, 91, 91);
+}
+
+.card__inc .card__img h1{
+    width: 100px;
+    right: 60px;
+    position:absolute;
+    color: rgb(95, 91, 91);
+    padding: 8px 15px;
+    text-align: center;
+    bottom: 5px;
+    left: calc(225px - 60px);
+}
+
+.card__info{
+    background-color: white;
+    height: 150px;
+    padding: 3rem;
+    transition: all 0.3s ease;
+    position: relative;
+    
+}
+
+.card__info p{
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card__info a{
+    width: 120px;
+    height: 35px;
+    border: 1px solid black;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    bottom: 50px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 0;
+}
+
+.card__img:hover{
+    background-color: rgb(241, 8, 8);
+    
+
+}
+
+.card__img:hover h1{
+    color: rgb(247, 242, 242);   
+
+}
+.card__img:hover i{
+    color: rgb(247, 242, 242);   
+
+}
+
+.card__info:hover{
+    height: 300px;
+}
+
+.card__info:hover p{
+    opacity: 1;
+}
+
+.card__info:hover a{
+    opacity: 1;
+} 
