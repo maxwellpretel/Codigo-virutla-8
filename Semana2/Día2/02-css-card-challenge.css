@@ -1,3 +1,7 @@
+:root{
+
+}
+
 *{
 margin:0;
 box-sizing:border-box;
@@ -7,25 +11,142 @@ padding:0;
 body{
     min-height: 100vh;
     background-color: #ddd;
+    font-family: "Roboto", sans-serif;
 
 }
 
 .card{
     width: 400px;
-    height: 500px;
+    height: 600px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px #aaa;
+    margin: 100px auto 0 auto;
 }
 
-.card__img{
-    position: relative;   
+.card__img{  
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+
+.card__img img{
+    position: relative;
+    left: -100px;
+    transition: all 0.3s ease;
+
+
+ }
+
+.card__img .card__date{
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: rgb(240, 80, 6);
+    text-align: center;
+    height: 60PX;
+    width: 60PX;
+    border-radius: 50%;
+    padding-top: 9px;
+}
+
+.card__img .card__photo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(240, 80, 6);
+    color: white;
+    text-align: center;
+    z-index: 100;
+    padding: 8px 15px;
+}
+
+.card__info{
+    background-color: white;
+    height: 200px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+.card__info .card__title{
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.card__info .card__slogan{
+    color: rgb(240, 80, 6);
+    margin-bottom: 3rem;
+
+}
+
+.card__info .card__description{
+    color: #666;
+    line-height: 1.5rem;
+    font-size: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.card__info .card__feed{
+    position: absolute;
+    bottom: 2rem;
+}
+
+.card__info .card__feed li{
+    display: inline-block;
+    color: #aaa;
+}
+
+.card__info .card__feed li:first-child{
+    margin-right: 30px;
+
+}
+
+.card:hover .card__img{
+    height: 300px;
+   
+
+}
+
+.card:hover .card__img img{
+    filter: brightness(0.5);
+}
+
+.card:hover .card__info{
+    height: 300px;
+
+}
+
+.card:hover .card__info .card__description{
+    font-size: 1rem;
+    opacity: 1;
+    margin-bottom: 3rem;
+    
+}
+
+.card:hover .card__slogan{
+    margin-bottom: 1rem;
+}
+
+
+
+/* 
+.card__NY{
+    width: 100%;
+    height: 100%;
+
 }
 
 .card__date{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: orangered;
+    background-color: rgba(247, 73, 10, 0.822);
     position: absolute;
     left: 85%;
     top: 5px;
@@ -33,12 +154,13 @@ body{
     padding-top: 4px;
     color: aliceblue;
 
+
 }
 
 .card__photo{
     width: 60;
     height: 20;
-    background-color: orangered;
+    background-color: rgba(248, 71, 7, 0.856);
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -46,10 +168,13 @@ body{
 
 }
 
-.card__NY{
-    height: 240px;
+.card__info{
+    width: 400px;
+    height: 400px;
 
 }
+
+
 
 .card__title{
     margin-left: 3.5rem;
@@ -57,7 +182,7 @@ body{
 
 .card_slogan{
     margin-left: 3.5rem;
-    color: rgb(192, 38, 11);
+    color: rgb(241, 14, 14);
 }
 
 .card_feed{
@@ -69,12 +194,23 @@ body{
     margin-left: 1.5rem;
 }
 
-.card__info:hover{
-    transform: translateY(20px);
-    cursor: pointer;
+
+.card__info .card__description{
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    visibility: hidden;
 
 }
 
+.card__info:hover > .card__description{
+    opacity: 1;
+    visibility: visible;
+
+
+}
+ */
 
 
 
+
+ */

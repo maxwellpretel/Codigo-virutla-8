@@ -21,13 +21,46 @@ header {
 /* opacity:0 le da un color trasparente, se puede seleccionar y dar click */
 /* visibility:hidden convierte a un elemento inivisible pero no se puede dar click mas amantiene su espacio */
 
-.navegacion {
+/* .navegacion { */
   /* display: se puede convertit en un elemento bloqueante o in line;
     display: block
             inline
             inline block */
-  display: none;
+  /* display: none; */
+/* } */
+
+/* .navegacion ul{ */
+  /* border: 3px solid blue; */
+/* } */
+
+.navegacion ul li {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-right: 15px;
+  background-color: #a11477;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.navegacion ul li i{
+  transition: all 0.8s ease;
+}
+
+.navegacion ul li:hover a{
+  
+  text-decoration: underline;
+}
+
+.navegacion ul li:hover i{
+  transform: rotate(360deg);
+}  
+
 
 /* calc() serve para realos operaciones con diferentes unidades de meiday poder hacer calculos */
 aside {

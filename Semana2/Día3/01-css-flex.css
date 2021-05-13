@@ -1,0 +1,50 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+body{
+    background-color: #999;
+    min-height: 100vh;
+    color: white;
+}
+
+.padre {
+    max-width: 600px;
+    /* border: 1px solid white; */
+    background-color: #222;
+    margin: 100px auto 0 auto;
+    /* (display: flex) todos los hijos se ponen en una sola fila  */
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 400px;
+    /* para aliniar los elementos en el eje Principal */
+    /* EJE Principal "X": Cuando flex-direcction:row */
+    /* Eje Princial "Y2Y: cuadno flex-direcction:column */
+    /* Por Defecto un padre Flex tiene fle-direccion:row */
+    /* justify-content: alinea los elementos en el eje Pricipal */
+    /* align-items: alinea los elementos en el eje Secundario */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hijo-1, .hijo-2, .hijo-3, .hijo-4 {
+    border: 1px solid yellow;
+    /* width:25% los hijo tienen partes iguales en el padre \ inline-block no permite que esten juntos */
+    /* width: 25%; */
+    width: 100px;
+}
+
+.hijo-1{
+    height: 100px;
+}
+
+.hijo-4{
+    /* flex: 2; */
+}
+
+.hijo-3{
+    height: 100%;
+}
